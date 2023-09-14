@@ -1,0 +1,39 @@
+header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+h1 {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  color: #333;
+  margin: 0 auto;;
+}
+
+/* html, body {
+     height: 100vh; 
+    width: 100vw;
+    background-color:blanchedalmond;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  } */
+.centered-container {
+    width: 50%; /*
+    height: 50%; */
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex; 
+    justify-content: center;  
+    align-items: center; 
+    border: 1px solid black;
+    background-color:darkorange
+  }  
+.centered-form {
+    width: 400px; 
+  }
+
+.btn-primary {
+    float:left;
+    margin-right:10px;
+ }
