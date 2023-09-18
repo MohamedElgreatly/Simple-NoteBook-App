@@ -1,0 +1,144 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Wep_notes test API",
+    "dateExported": "2023-09-18T09:45:00.470Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "2787b578-2d0a-42ba-9e1b-27603c76ff1e",
+            "colId": "4f72b524-6647-40c1-a905-f40197d25803",
+            "containerId": "",
+            "name": "AddNotes imge type",
+            "url": "http://localhost:8080/NoteBook/AddNote",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-09-18T06:51:51.398Z",
+            "modified": "2023-09-18T06:51:51.398Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n \"userName\":\"hamed mongi\",\n \"type\":\"image\",\n \"text\":\" i should go to school early!!\"\n}\n\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "7e6379cc-8963-46d1-89be-105b4ac411d2",
+            "colId": "4f72b524-6647-40c1-a905-f40197d25803",
+            "containerId": "",
+            "name": "Add Notes With type text ",
+            "url": "http://localhost:8080/NoteBook/AddNote",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-09-18T06:52:01.873Z",
+            "modified": "2023-09-18T06:52:01.873Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"type\":\"text\",\n  \"text\":\"hello my name is mohamed70\",\n  \"userName\":\"Ahmed\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "4c44b965-88e5-48be-a0a6-40f0adb2cd83",
+            "colId": "4f72b524-6647-40c1-a905-f40197d25803",
+            "containerId": "",
+            "name": "Add notes with voice type",
+            "url": "http://localhost:8080/NoteBook/AddNote",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-09-18T06:52:13.429Z",
+            "modified": "2023-09-18T06:55:07.113Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n \"userName\":\"hamed mongi\",\n \"type\":\"voice\",\n \"text\":\" i should go to school early!!\"\n}\n\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "caf8f4c5-d304-4c26-9782-b8acf7aee66f",
+            "colId": "4f72b524-6647-40c1-a905-f40197d25803",
+            "containerId": "",
+            "name": "SignUp already Exist",
+            "url": "http://localhost:8080/NoteBook/signUp",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-09-18T06:52:21.084Z",
+            "modified": "2023-09-18T06:52:21.084Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n \"userName\":\"hamed mongi\",\n \"address\":\"30 st  ali\",\n \"email\":\"shabankhalid78@gmail.com\",\n \"password\":\"997ppo\",\n \"status\":\"Female\",\n \"city\":\"Rashid\",\n \"checkBox\":true\n}\n\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f3352e30-30b2-4ff7-a321-d6f80580ba6a",
+            "colId": "4f72b524-6647-40c1-a905-f40197d25803",
+            "containerId": "",
+            "name": "Signin successfull",
+            "url": "http://localhost:8080/NoteBook/signIn",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-09-18T06:52:30.187Z",
+            "modified": "2023-09-18T06:54:03.581Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n \"userName\":\"khalid\",\n \"email\":\"shabankhalid78@gmail.com\",\n \"password\":\"997ppo\"\n}\n\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "9ced9caf-f4f4-441f-94f4-5bae1fa68a84",
+            "colId": "4f72b524-6647-40c1-a905-f40197d25803",
+            "containerId": "",
+            "name": "GetNotes success case",
+            "url": "http://localhost:8080/NoteBook/getNotes?userName=kamis",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-09-18T06:55:46.963Z",
+            "modified": "2023-09-18T09:44:04.813Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "userName",
+                    "value": "kamis",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "335371be-b3a5-4169-9332-066fc59562f8",
+            "colId": "4f72b524-6647-40c1-a905-f40197d25803",
+            "containerId": "",
+            "name": "GetNotes Failure case Copy",
+            "url": "http://localhost:8080/NoteBook/getNotes?userName=khalid",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-09-18T09:43:45.308Z",
+            "modified": "2023-09-18T09:43:45.308Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "userName",
+                    "value": "khalid",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        }
+    ]
+}

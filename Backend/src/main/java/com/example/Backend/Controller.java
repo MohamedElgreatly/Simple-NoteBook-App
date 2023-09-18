@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 @RestController
 @CrossOrigin
@@ -34,8 +35,9 @@ public class Controller {
 
     }
     @GetMapping("/getNotes")
-    public ResultSet getNotes(String userName) throws SQLException {
+    public ArrayList<Note> getNotes(@RequestParam String userName) throws SQLException {
         Note obj =new Note();
+        System.out.println(obj.getNotes(userName));
         return obj.getNotes(userName);
     }
 }
