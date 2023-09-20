@@ -1,12 +1,12 @@
 package com.example.Backend.NotesFactoryPattern;
 
-import com.example.Backend.Model.DBConnection;
-import com.example.Backend.Note;
+        import com.example.Backend.Model.DBConnection;
+        import com.example.Backend.Note;
 
-import java.sql.SQLException;
-import java.sql.Statement;
+        import java.sql.SQLException;
+        import java.sql.Statement;
 
-public class Voice implements Notes{
+public class VoiceText implements Notes{
 
     @Override
     public String saveNote(Note note) throws SQLException {

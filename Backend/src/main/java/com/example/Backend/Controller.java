@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 @RestController
 @CrossOrigin
-@RequestMapping("NoteBook")
+@RequestMapping("/NoteBook")
 public class Controller {
 
     @PostMapping("/signUp")
@@ -36,6 +36,7 @@ public class Controller {
     }
     @GetMapping("/getNotes")
     public ArrayList<Note> getNotes(@RequestParam String userName) throws SQLException {
+        System.out.println(userName+"    ooo");
         Note obj =new Note();
         System.out.println(obj.getNotes(userName));
         return obj.getNotes(userName);

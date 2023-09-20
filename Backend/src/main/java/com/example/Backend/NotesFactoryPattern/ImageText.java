@@ -1,12 +1,12 @@
 package com.example.Backend.NotesFactoryPattern;
 
-import com.example.Backend.Model.DBConnection;
-import com.example.Backend.Note;
+        import com.example.Backend.Model.DBConnection;
+        import com.example.Backend.Note;
 
-import java.sql.SQLException;
-import java.sql.Statement;
+        import java.sql.SQLException;
+        import java.sql.Statement;
 
-public class Image implements Notes {
+public class ImageText implements Notes {
 
     @Override
     public String saveNote(Note note) throws SQLException {
@@ -15,3 +15,4 @@ public class Image implements Notes {
         return "image note saved successfully";
     }
 }
+

@@ -7,11 +7,11 @@ public class NotesFactory {
         {
             return new Text();
         }
-        else if(type.equals("image")){
-            return new Image();
+        else if(type.equals("image_text")){
+            return new ImageText();
         }
         else{
-            return new Voice();
+            return new VoiceText();
         }
     }
 }

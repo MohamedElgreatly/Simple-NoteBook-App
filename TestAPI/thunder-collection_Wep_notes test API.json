@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "Wep_notes test API",
-    "dateExported": "2023-09-18T09:45:00.470Z",
+    "dateExported": "2023-09-20T08:45:56.933Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -33,12 +33,12 @@
             "method": "POST",
             "sortNum": 20000,
             "created": "2023-09-18T06:52:01.873Z",
-            "modified": "2023-09-18T06:52:01.873Z",
+            "modified": "2023-09-20T08:38:35.231Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"type\":\"text\",\n  \"text\":\"hello my name is mohamed70\",\n  \"userName\":\"Ahmed\"\n}",
+                "raw": "{\n  \"type\":\"imae_text\",\n  \"text\":\"hello my name is mohamed70\",\n  \"userName\":\"Ahmed\"\n}",
                 "form": []
             },
             "tests": []
@@ -90,12 +90,12 @@
             "method": "POST",
             "sortNum": 50000,
             "created": "2023-09-18T06:52:30.187Z",
-            "modified": "2023-09-18T06:54:03.581Z",
+            "modified": "2023-09-18T12:14:58.726Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n \"userName\":\"khalid\",\n \"email\":\"shabankhalid78@gmail.com\",\n \"password\":\"997ppo\"\n}\n\n",
+                "raw": "{\n \"userName\":\"khalid\",\n \"password\":\"997ppo\"\n}\n\n",
                 "form": []
             },
             "tests": []
@@ -105,16 +105,16 @@
             "colId": "4f72b524-6647-40c1-a905-f40197d25803",
             "containerId": "",
             "name": "GetNotes success case",
-            "url": "http://localhost:8080/NoteBook/getNotes?userName=kamis",
+            "url": "http://localhost:8080/NoteBook/getNotes?userName=ahmed",
             "method": "GET",
             "sortNum": 60000,
             "created": "2023-09-18T06:55:46.963Z",
-            "modified": "2023-09-18T09:44:04.813Z",
+            "modified": "2023-09-19T12:04:34.788Z",
             "headers": [],
             "params": [
                 {
                     "name": "userName",
-                    "value": "kamis",
+                    "value": "ahmed",
                     "isPath": false
                 }
             ],
