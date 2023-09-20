@@ -1,0 +1,27 @@
+<h1> Welcom {{receivedVariable}}</h1>
+<div class="ButtonSection">
+<button type="button" class="btn btn-secondary" (click)="AddNotes()">Add Notes</button>
+<button type="button" class="btn btn-secondary" (click)="enableNotes()">MyNotes</button>
+
+</div>
+<div *ngIf="formButton">
+<form  (ngSubmit)="onSubmit()">
+    <label for="note">Add a Note:</label><br>
+    <textarea id="note" name="note" rows="4" cols="50" [(ngModel)]="formData.text"></textarea><br>
+    <div class="col-md-4">
+        <label for="inputState" class="form-label">Type of text</label>
+        <select id="inputState" class="form-select" [(ngModel)]="formData.type"  [ngModelOptions]="{ standalone: true }">
+          <option selected > text</option>
+          <option >image_text</option>
+          <option >voice_text</option>
+        </select>
+      </div><br>
+    <input type="submit" value="Save Note">
+</form>
+</div >
+<div class="myNotes" *ngIf="NoteButton">
+<ul class="list-group list-group-numbered" *ngFor="let item of items">
+    <li class="list-group-item"> {{item}}</li>
+</ul>
+</div>
+
